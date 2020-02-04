@@ -1,6 +1,6 @@
 def listDivide(numbers, divide = 2):
     divs = len([num for num in numbers if num % divide ==0])
-	return divs
+    return divs
     
 class listDivideException(Exception):
     pass
@@ -13,8 +13,8 @@ def testListDivide():
         listDivide([])
         listDivide([1,2,3,4,5],1)
         
-        except ListDivideException:
-            print("Test Case Error!") 
+    except listDivideException:
+        print("Test Case Error!") 
             
 
 
